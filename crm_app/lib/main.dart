@@ -1,22 +1,16 @@
 import 'package:flutter/material.dart';
-import 'views/screens/task_list_screen.dart';
+import 'views/screens/task_category_screen.dart';
 
 void main() {
-  runApp(CRMApp());
+  runApp(MyApp());
 }
 
-class CRMApp extends StatelessWidget {
-  const CRMApp({super.key});
-
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        brightness: Brightness.light,
-        primaryColor: Colors.black,
-      ),
-      home: TaskListScreen(),
+      home: TaskCategoryScreen(),
     );
   }
 }
